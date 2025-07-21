@@ -1,0 +1,12 @@
+{% extends 'generator/base.html' %}
+{% load static %}
+
+{% block title %}Result | Text to Image Generator{% endblock %}
+
+{% block content %}
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <p><strong>Prompt:</strong> {{ generation.prompt }}</p>
+    <img src="{{ generation.image.url }}" alt="Generated Image" style="max-width: 512px; max-height: 512px;"/>
+    <a href="/">Generate another image</a>
+</div>
+{% endblock %} 

@@ -1,0 +1,12 @@
+{% extends 'generator/base.html' %}
+
+{% block title %}Generate Image | Text to Image Generator{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <label for="prompt">Enter your prompt:</label>
+    <input type="text" id="prompt" name="prompt" placeholder="A cat drinking coffee in space" required>
+    <button type="submit">Generate Image</button>
+</form>
+{% endblock %} 

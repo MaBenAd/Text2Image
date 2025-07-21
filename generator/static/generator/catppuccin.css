@@ -1,0 +1,118 @@
+/* Catppuccin Mocha palette and modern styles */
+:root {
+  --ctp-bg: #1e1e2e;
+  --ctp-surface: #313244;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext: #a6adc8;
+  --ctp-accent: #89b4fa;
+  --ctp-green: #a6e3a1;
+  --ctp-yellow: #f9e2af;
+  --ctp-red: #f38ba8;
+  --ctp-pink: #f5c2e7;
+  --ctp-blue: #89b4fa;
+  --ctp-mauve: #cba6f7;
+  --ctp-overlay: #45475a;
+}
+
+body {
+  background: var(--ctp-bg);
+  color: var(--ctp-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--ctp-surface);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--ctp-accent);
+  letter-spacing: 2px;
+  box-shadow: 0 2px 8px 0 #0002;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+form {
+  background: var(--ctp-surface);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 #0003;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 320px;
+  max-width: 100vw;
+}
+
+label {
+  font-size: 1.1rem;
+  color: var(--ctp-subtext);
+}
+
+input[type="text"] {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--ctp-overlay);
+  color: var(--ctp-text);
+  font-size: 1rem;
+  outline: none;
+  margin-top: 0.5rem;
+}
+
+button {
+  background: linear-gradient(90deg, var(--ctp-accent), var(--ctp-mauve));
+  color: var(--ctp-bg);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, var(--ctp-mauve), var(--ctp-accent));
+}
+
+img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 #0005;
+  margin-top: 1.5rem;
+  max-width: 100%;
+  background: var(--ctp-overlay);
+}
+
+a {
+  color: var(--ctp-blue);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 2rem;
+  display: inline-block;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--ctp-pink);
+}
+
+footer {
+  background: var(--ctp-surface);
+  color: var(--ctp-subtext);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: auto;
+} 
