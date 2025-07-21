@@ -4,8 +4,9 @@ from django.core.files.base import ContentFile
 from io import BytesIO
 import requests
 import base64
+import os
 
-STABILITY_API_KEY = "sk-jlz9Gfp8YXxKnZvUOauLUEKyKKLQiTuLCZlCBeTHbRS7C1aQ"
+STABILITY_API_KEY = os.environ.get('STABILITY_API_KEY')
 
 # Calls Stability AI API to generate an image from a prompt
 def generate_image_from_prompt(prompt):
